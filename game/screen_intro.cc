@@ -137,8 +137,8 @@ void ScreenIntro::draw() {
 	auto& window = getGame().getWindow();
 	glutil::GLErrorChecker glerror("ScreenIntro::draw()");
 	{
-		float anim = static_cast<float>(SDL_GetTicks() % 20000 / 20000.0);
-		ColorTrans c(window, glmath::rotate(static_cast<float>(TAU * anim), glmath::vec3(1.0f, 1.0f, 1.0f)));
+	//	float anim = static_cast<float>(SDL_GetTicks() % 20000 / 20000.0);
+	//	ColorTrans c(window, glmath::rotate(static_cast<float>(TAU * anim), glmath::vec3(1.0f, 1.0f, 1.0f)));
 		theme->bg.draw(window);
 	}
 	if (m_menu.current().image) m_menu.current().image->draw(window);
